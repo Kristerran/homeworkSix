@@ -23,7 +23,7 @@ fetch(url)
     cityEl.innerHTML = currentCity
     var weatherDesc = data.weather[0].description
     weatherdescEl.innerText = weatherDesc
-    var icon = 'http://openweathermap.org/img/w/' + data.weather[0].icon + '.png'
+    var icon = 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png'
     iconEl.src = icon
     var temp = data.main.temp + 'º C'
     tempEl.innerHTML = temp
