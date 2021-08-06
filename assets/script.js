@@ -14,7 +14,7 @@ resetButton.addEventListener('click', reset)
 
 function apiCall(){
 var city = document.getElementById('cityGet').value
-var url = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey;
+var url = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey;
 fetch(url)
 .then(response => response.json())
 .then(data => {
